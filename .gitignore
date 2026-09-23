@@ -33,9 +33,9 @@ override.tf.json
 # CLI configuration files
 .terraformrc
 terraform.rc
-C:\aws-terraform\Day-01\.terraform.lock.hcl
-C:\aws-terraform\Day-02\.terraform.lock.hcl
-C:\aws-terraform\Day-03\.terraform.lock.hcl
+
+# Terraform provider dependency lock files
+**/.terraform.lock.hcl
 
 
 
