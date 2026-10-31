@@ -1,0 +1,21 @@
+name: DAG needs Block pipeline to dependent jobs
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-22.04
+    steps:
+        run: echo "This is Job 1"
+
+  job2:
+    needs: job1
+    runs-on: ubuntu-22.04
+    steps:
+        run: echo "this job will only trigger once job1 is completed successfully"
+
+  job3:
+    needs: job2
+    runs-on: ubuntu-22.04
+    steps:
+        run: echo "this job will only trigger when job1 and job2 are completed successfully"
