@@ -1,4 +1,4 @@
-name: fctp hello world github Action 1st Session
+name: bld hello world github Action 1st Session
 
 on:
   workflow_dispatch:
